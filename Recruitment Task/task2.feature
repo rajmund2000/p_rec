@@ -4,6 +4,7 @@ Feature: Bing Copilot
 
     Scenario Outline: Get information about Prowly media monitoring from Copilot
     Given the User has the bing.com page open
+    And isn't signed in 
     When the User requests Copilot to write information about phrase <phrase>
     Then Copilot outputs information <result>
 
